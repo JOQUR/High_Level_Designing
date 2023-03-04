@@ -1,0 +1,61 @@
+@startuml Inheritance
+class GroundVehicle {
+    -_wheels : int
+    +GroundVehicle()
+    +{abstract}drive() : void
+    +setWheels() : void
+    +getWheels() : int
+}
+class Watercraft{
+    -_hasSail : bool
+    +Watercraft()
+    +sethasSail() : void
+    +gethasSail() : bool
+}
+class Vehicle {
+    -_capacity : int
+    -_length : float
+    -_weight : float
+    +setCapacity() : void
+    +setLength() : void
+    +setWeight() : void
+    +getCapacity() : int
+    +getLength() : float
+    +getWeight() : float
+}
+class Car {
+    -_horsepower : int
+    -_engine : float
+    -_doors : int
+    -_manual : bool
+    +Car()
+    -_comany : string
+    +drive() : void
+    +playRadio() : void
+    +setCompany() : void
+    +getCompany() : string
+}
+enum Companies {
+    Ford
+    Seat 
+    Volkswagen
+}
+class AutonomousCar {
+
+}
+class MountainBike {
+
+}
+class Bike {
+    -_size : int
+    +drive() : void
+    +getSize() : int
+    +setSize() : void
+}
+Vehicle <|-- GroundVehicle
+Vehicle <|-- Watercraft
+GroundVehicle <|-- Car
+GroundVehicle <|-- Bike
+Car <|-- AutonomousCar
+Bike <|-- MountainBike
+@enduml
