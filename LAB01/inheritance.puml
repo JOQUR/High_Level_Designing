@@ -3,25 +3,20 @@ class GroundVehicle {
     -_wheels : int
     +GroundVehicle()
     +{abstract}drive() : void
-    +setWheels() : void
-    +getWheels() : int
+    +<<get/set>> wheels: int
 }
 class Watercraft{
     -_hasSail : bool
     +Watercraft()
-    +sethasSail() : void
-    +gethasSail() : bool
+    +<<get/set>> hasSail : bool
 }
 class Vehicle {
     -_capacity : int
     -_length : float
     -_weight : float
-    +setCapacity() : void
-    +setLength() : void
-    +setWeight() : void
-    +getCapacity() : int
-    +getLength() : float
-    +getWeight() : float
+    +<<get/set>> capacity : int
+    +<<get/set>> length : float
+    +<<get/set>> weight : float
 }
 class Car {
     -_horsepower : int
@@ -32,25 +27,32 @@ class Car {
     -_comany : string
     +drive() : void
     +playRadio() : void
-    +setCompany() : void
-    +getCompany() : string
-}
-enum Companies {
-    Ford
-    Seat 
-    Volkswagen
+    +<<get/set>> horsepower : int
+    +<<get/set>> engine : float
+    +<<get/set>>doors : int
+    +<<get/set>> manual : bool
+    +<<get/set>> company : string
 }
 class AutonomousCar {
-
+    -_softwareVersion : int[]
+    -_autonomousLevel : int
+    +AutonomousCar()
+    +autoPilot(bool autonomousMode) : void
+    +sensorsOn() : void
+    +watchTv() : void
+    +<<get/set>> softwareVersions : int[]
+    +<<get/set>> autonomousLeve; : int
 }
 class MountainBike {
 
 }
 class Bike {
     -_size : int
+    -_shifts: int
+    +Bike()
     +drive() : void
-    +getSize() : int
-    +setSize() : void
+    +<<get/set>> size : int
+    +<<get/set>> shifts : int
 }
 Vehicle <|-- GroundVehicle
 Vehicle <|-- Watercraft
