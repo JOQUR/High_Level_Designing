@@ -1,6 +1,6 @@
 ﻿namespace Inheritance
 {
-    class Vehicle 
+    public class Vehicle 
     {
         private int _capacity;
         private float _length;
@@ -12,7 +12,7 @@
         public float Weight { get => _weight; set => _weight = value; }
 
 
-        Vehicle()
+        public Vehicle(int cap = 0, float len = 0, float weight = 0)
         {
 
         }
