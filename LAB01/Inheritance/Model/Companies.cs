@@ -1,4 +1,4 @@
-﻿namespace Inheritance
+﻿namespace Inheritance.Model
 {
     public enum Companies
     {
