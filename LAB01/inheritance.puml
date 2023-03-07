@@ -1,0 +1,63 @@
+@startuml Inheritance
+class GroundVehicle {
+    -_wheels : int
+    +GroundVehicle()
+    +{abstract}drive() : void
+    +<<get/set>> wheels: int
+}
+class Watercraft{
+    -_hasSail : bool
+    +Watercraft()
+    +<<get/set>> hasSail : bool
+}
+class Vehicle {
+    -_capacity : int
+    -_length : float
+    -_weight : float
+    +<<get/set>> capacity : int
+    +<<get/set>> length : float
+    +<<get/set>> weight : float
+}
+class Car {
+    -_horsepower : int
+    -_engine : float
+    -_doors : int
+    -_manual : bool
+    +Car()
+    -_comany : string
+    +drive() : void
+    +playRadio() : void
+    +<<get/set>> horsepower : int
+    +<<get/set>> engine : float
+    +<<get/set>>doors : int
+    +<<get/set>> manual : bool
+    +<<get/set>> company : string
+}
+class AutonomousCar {
+    -_softwareVersion : int[]
+    -_autonomousLevel : int
+    +AutonomousCar()
+    +autoPilot(bool autonomousMode) : void
+    +sensorsOn() : void
+    +watchTv() : void
+    +<<get/set>> softwareVersions : int[]
+    +<<get/set>> autonomousLeve; : int
+}
+class MountainBike {
+
+}
+class Bike {
+    -_size : int
+    -_shifts: int
+    +Bike()
+    +drive() : void
+    +<<get/set>> size : int
+    +<<get/set>> shifts : int
+}
+Vehicle <|-- GroundVehicle
+Vehicle <|-- Watercraft
+GroundVehicle <|-- Car
+GroundVehicle <|-- Bike
+Car <|-- AutonomousCar
+Bike <|-- MountainBike
+@enduml
