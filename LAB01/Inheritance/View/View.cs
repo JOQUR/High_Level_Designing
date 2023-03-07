@@ -20,7 +20,7 @@ namespace Inheritance.View
                     double len = 0,
                     double weight = 0)
         {
-            Cars cars = new Cars(hp, eng, doors, manual, company, wheels, msg, cap, len, weight);
+            Cars cars = new Cars();
             CarsList.Add((Car)cars.vehicle(hp, eng, doors, manual, company, wheels, msg, cap, len, weight));
         }
 
