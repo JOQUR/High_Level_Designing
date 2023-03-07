@@ -26,7 +26,6 @@ namespace Inheritance.Model
             Doors = doors;
             Manual = manual;
             Company = company;
-            Console.WriteLine(msg);
         }
         public override void drive()
         {

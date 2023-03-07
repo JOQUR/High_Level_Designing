@@ -2,7 +2,6 @@
 {
     public class AutonomousCar : Car
     {
-
         public int SoftwareVersion { get; private set; }
         public int AutonomousLevel { get; private set; }
         public AutonomousCar(int softwareVersion = 1,

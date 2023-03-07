@@ -18,7 +18,6 @@ namespace Inheritance.Model
                              double weight = 0) : base(cap, len, weight)
         {
             Wheels = wheels;
-            Console.WriteLine(msg);
         }
     }
 }

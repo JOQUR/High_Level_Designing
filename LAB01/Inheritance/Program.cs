@@ -1,19 +1,19 @@
-﻿using Inheritance.Model;
+﻿using Inheritance.View;
 using System;
 using System.Collections.Generic;
 
 namespace Inheritance
 {
-    internal class Program
+    internal partial class Program
     {
         static void Main(string[] args)
         {
-            List<AutonomousCar> cars = new List<AutonomousCar> { new AutonomousCar(2, 4, 200, 2, 5, true, Companies.Ferrari, 4, null, 4, 3.5, 1300.5), new AutonomousCar(2, 0, 100, 1.4, 5, true, Companies.Seat, 4, null, 4, 3.5, 1300.5) };
-            foreach(AutonomousCar car in cars)
-            {
-                Console.WriteLine(car.Company);
-            }
+            View.View view = new View.View(200, 5.0, 5, true, (Model.Companies)3, 4, "UA", 2, 3, 1100);
+            view = new View.View(450, 7.0, 3, true, Model.Companies.Ferrari, 4, "Fast", 2, 3, 900);
+            view = new View.View(100, 1.2, 5, true, Model.Companies.Skoda, 4, "hmm", 2, 3, 1300);
+            view = new View.View(150, 1.5, 5, true, Model.Companies.Ford, 4, "Fast", 2, 3, 1100);
+
+            View.View.ListCars();
         }
     }
 }
-
