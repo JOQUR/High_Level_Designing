@@ -24,9 +24,23 @@ namespace Inheritance.View
             CarsList.Add((Car)cars.vehicle(hp, eng, doors, manual, company, wheels, msg, cap, len, weight));
         }
 
+        static public void AddCar(int hp = 100,
+                                    double eng = 1,
+                                    int doors = 3,
+                                    bool manual = false,
+                                    Companies company = Companies.Ferrari,
+                                    int wheels = 4,
+                                    string msg = null,
+                                    int cap = 0,
+                                    double len = 0,
+                                    double weight = 0)
+        {
+            _ = new View(hp, eng, doors, manual, company, wheels, msg, cap, len, weight);
+        }
+        
         static public void ListCars()
         {
-            foreach(var obj in CarsList)
+            foreach (var obj in CarsList)
             {
                 Console.WriteLine("================================");
                 Console.WriteLine("HorsePower: {0}", obj.HorsePower);
