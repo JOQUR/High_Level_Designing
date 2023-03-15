@@ -1,12 +1,7 @@
 ﻿namespace Polymorphism
 {
     public class MechArm : Robot
-    {
-        private const int electricityPrice = 1;
-        private const int hoursPerDay = 16;
-        private const int k = 1000;
-
-        public MechArms Type { get; private set; }
+    { 
         public MechArm(MechArms type)
         {
             PowerConsumption = (int)type;
