@@ -39,6 +39,7 @@
             fixConnectivity(computers);
             #endregion
         }
+
         #region Helper Methods
         static int getElectricityBill(int year, List<Robot> robots)
         {
