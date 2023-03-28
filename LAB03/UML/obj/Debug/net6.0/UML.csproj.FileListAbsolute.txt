@@ -1,0 +1,15 @@
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\UML.csproj.AssemblyReference.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\UML.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\UML.AssemblyInfoInputs.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\UML.AssemblyInfo.cs
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\UML.csproj.CoreCompileInputs.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\bin\Debug\net6.0\UML.exe
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\bin\Debug\net6.0\UML.deps.json
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\bin\Debug\net6.0\UML.runtimeconfig.json
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\bin\Debug\net6.0\UML.dll
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\bin\Debug\net6.0\UML.pdb
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\UML.dll
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\refint\UML.dll
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\UML.pdb
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\UML.genruntimeconfig.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB03\UML\obj\Debug\net6.0\ref\UML.dll

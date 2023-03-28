@@ -1,0 +1,6 @@
+﻿  main.c
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB01\RingBuffer\main.c(9,3): warning C4013: niezdefiniowany "system"; przy założeniu, że extern zwraca int
+  ring_buffer.c
+  ring_buffer_unit_test.c
+  Generowanie kodu...
+  RingBuffer.vcxproj -> C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB01\RingBuffer\x64\Debug\RingBuffer.exe

@@ -1,0 +1,123 @@
+@startuml
+
+class Vehicle{
+    +<<get/private set>> Weight : double
+    +<<get/set>> Seats : int
+    +<<get/private set>> BodyMaterial : BodyMaterials
+    #gps : GlobalPositioningSystem
+
+    + Vehicle(_weight : double, _seats : int)
+    +getIn(_weight : double) : string
+}
+
+class GroundVehicle{
+    +<<get/set>> HP : int
+    +GroundVehicle(_hp : int, _bodyMaterial : BodyMaterials, _weight : double, _seats : int)
+    + {abstract} getSpeed(_hp : int, _weight : double) : double
+    + {abstract} drive() : string
+    + {abstract} brake() : string
+}
+note left of GroundVehicle::getSpeed
+getSpeed and drive and brake are virtual methods
+end note
+
+class CivilVehicle{
+    #needDrivingLicense : bool
+    +CivilVehicle(_drivingLicense : bool, _hp : int, _bodyMaterial : BodyMaterials, _weight : double, _seats : int)
+    +getSpeed(_hp : int, _weight : double) : double
+    +drive() : string
+    +brake() : string
+    +makeTrip(_time : int) : string
+}
+
+class Car{
+    +Car(_manufacturer : CarManufacturers)
+    +listenToRadio(favStation : string) : string
+    +rest(_time : int) : string
+    +ignite() : void
+    +checkEverything(time : int) : bool
+}
+
+class MotorBike{
+    +<<get/set>> Bags : int
+    +doTricks(_skill : int) : string
+    +changeChain(_time : int) : void
+}
+
+class GlobalPositioningSystem{
+    +<<get/set>> Version : int[]
+    +findPath(start : double[], end : double[]) : double[]
+}
+
+class MilitaryVehicle{
+    +<<get/set>> Ammunition : int
+    +getSpeed(_hp : int, _weight : double) : double
+    +drive() : string
+    +brake() : string
+    +callForSupport() : string
+}
+
+class Tank{
+    -crew : CrewMans[]
+    +listenToRadio(_favStation : string) : string
+    +rest(_time : int) : string
+    +ignite() : void
+    +checkEverything(_time : int) : bool
+    +void shot(_ammo : int) : void
+    +void quickFix(_time : int) : void
+    -loadAmmo(_time : int) : void
+}
+
+
+
+enum CarManufacturers{
+    None,
+    Ferrari,
+    AstonMartin,
+    Seat,
+    VW,
+    Skoda
+}
+enum BodyMaterials{
+    NotDefined,
+    Carbon = 20,
+    Wood = 30,
+    Aluminium = 50,
+    Steel = 150
+}
+
+enum CrewMans {
+    Enigineer,
+    Captain,
+    Driver,
+    Loader,
+    Scout
+}
+
+
+interface IEntertainment {
+    listenToRadio(favStation : string) : string
+    rest(time : int) : string
+    ignite() : void
+    checkEverything(time : int) : bool
+}
+interface IFight{
+    void shot(_ammo : int) : void
+    void quickFix(_time : int) : void
+}
+
+
+CrewMans <-- Tank
+CivilVehicle <|-- MotorBike
+IEntertainment <|.. IFight
+CarManufacturers <-- Car
+CivilVehicle <|-- Car
+IEntertainment <|.. Car
+Vehicle <|-- GroundVehicle
+BodyMaterials <-- Vehicle
+GlobalPositioningSystem o-- Vehicle
+GroundVehicle <|-- CivilVehicle
+GroundVehicle <|-- MilitaryVehicle
+MilitaryVehicle <|-- Tank
+IFight <|.. Tank
+@enduml

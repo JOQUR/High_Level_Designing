@@ -19,7 +19,6 @@ class Vehicle {
     +<<get/set>> weight : float
 }
 class Car {
-    -_horsepower : int
     -_engine : float
     -_doors : int
     -_manual : bool
@@ -43,9 +42,6 @@ class AutonomousCar {
     +<<get/set>> softwareVersions : int[]
     +<<get/set>> autonomousLeve; : int
 }
-class MountainBike {
-
-}
 class Bike {
     -_size : int
     -_shifts: int
@@ -59,5 +55,4 @@ Vehicle <|-- Watercraft
 GroundVehicle <|-- Car
 GroundVehicle <|-- Bike
 Car <|-- AutonomousCar
-Bike <|-- MountainBike
 @enduml
