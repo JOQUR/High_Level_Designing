@@ -174,5 +174,6 @@ namespace VehicleFactory{
     class CarFactory extends CivilianFactory
     class MotorBikeFactory extends CivilianFactory
     class TankFactory extends MilitaryFactory
+    class SelfRidingCarFactory extends CivilianFactory
 }
 @enduml
