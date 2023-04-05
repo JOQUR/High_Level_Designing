@@ -1,0 +1,15 @@
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\bin\Debug\net6.0\Example.exe
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\bin\Debug\net6.0\Example.deps.json
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\bin\Debug\net6.0\Example.runtimeconfig.json
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\bin\Debug\net6.0\Example.dll
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\bin\Debug\net6.0\Example.pdb
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\Example.csproj.AssemblyReference.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\Example.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\Example.AssemblyInfoInputs.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\Example.AssemblyInfo.cs
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\Example.csproj.CoreCompileInputs.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\Example.dll
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\refint\Example.dll
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\Example.pdb
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\Example.genruntimeconfig.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\AbstractFactory\Example\obj\Debug\net6.0\ref\Example.dll

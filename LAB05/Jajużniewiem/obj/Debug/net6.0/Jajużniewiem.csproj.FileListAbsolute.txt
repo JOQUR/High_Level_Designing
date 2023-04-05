@@ -1,0 +1,15 @@
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\bin\Debug\net6.0\Jajużniewiem.exe
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\bin\Debug\net6.0\Jajużniewiem.deps.json
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\bin\Debug\net6.0\Jajużniewiem.runtimeconfig.json
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\bin\Debug\net6.0\Jajużniewiem.dll
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\bin\Debug\net6.0\Jajużniewiem.pdb
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\Jajużniewiem.csproj.AssemblyReference.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\Jajużniewiem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\Jajużniewiem.AssemblyInfoInputs.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\Jajużniewiem.AssemblyInfo.cs
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\Jajużniewiem.csproj.CoreCompileInputs.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\Jajużniewiem.dll
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\refint\Jajużniewiem.dll
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\Jajużniewiem.pdb
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\Jajużniewiem.genruntimeconfig.cache
+C:\Users\PKier\OneDrive\Pulpit\High_Level_Design\High_Level_Designing\LAB05\Jajużniewiem\obj\Debug\net6.0\ref\Jajużniewiem.dll

@@ -1,0 +1,71 @@
+<diagram program="umletino" version="15.1"><zoom_level>12</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>384</x><y>216</y><w>204</w><h>132</h></coordinates><panel_attributes>/Wardrobe/
+--
++&lt;&lt;get/set&gt;&gt;Price : int
++&lt;&lt;get/set&gt;&gt;Color : string
++&lt;&lt;get/set&gt;&gt;Capacity : double
++&lt;&lt;get/set&gt;&gt;Style : Styles
+-
+/+storeItem(_item : var) : bool/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>144</x><y>336</y><w>360</w><h>204</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>280;10;280;70;10;70;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>36</x><y>516</y><w>252</w><h>96</h></coordinates><panel_attributes>Dresser
+--
++&lt;&lt;get/set&gt;&gt;NumberOfDrawers : int
+--
++storeItem(_item : var) : bool
++Dresser(_style : Styles)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>372</x><y>516</y><w>216</w><h>96</h></coordinates><panel_attributes>NightTable
+--
++&lt;&lt;get/set&gt;&gt;HasLamp : bool
+--
++storeItem(_item : var) : bool
++NightTable(_style : Styles)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>468</x><y>336</y><w>36</w><h>204</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>708</x><y>516</y><w>240</w><h>96</h></coordinates><panel_attributes>CornerWardrobe
+--
++&lt;&lt;get/set&gt;&gt;NumberOfShelves : int
+--
++storeItem(_item : var) : bool
++CornerWardrobe(_style : Styles)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>468</x><y>336</y><w>384</w><h>204</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;300;70;300;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1044</x><y>660</y><w>408</w><h>108</h></coordinates><panel_attributes>/InteriorDesigner/
+--
+#style : Styles
+--
+/+CreateDesk(_priceLimit : int, _style : Styles) : Desk/
+/+CreateWardrobe(_priceLimit : int, _style : Styles) : Wardrobe/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1188</x><y>204</y><w>120</w><h>108</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Styles
+--
+Classical,
+Modern,
+Scaninavian</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1236</x><y>300</y><w>36</w><h>384</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;300</additional_attributes></element><element><id>Text</id><coordinates><x>1200</x><y>612</y><w>120</w><h>84</h></coordinates><panel_attributes>uses</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1236</x><y>756</y><w>36</w><h>360</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;280</additional_attributes></element><element><id>Relation</id><coordinates><x>912</x><y>756</y><w>360</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>280;10;280;70;10;70;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>1236</x><y>756</y><w>384</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;300;70;300;180</additional_attributes></element><element><id>UMLClass</id><coordinates><x>696</x><y>972</y><w>408</w><h>108</h></coordinates><panel_attributes>ClassicalDesigner
+--
++CreateDesk(_priceLimit : int, _style : Styles) : Desk
++CreateWardrobe(_priceLimit : int, _style : Styles) : Wardrobe</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1020</x><y>1092</y><w>408</w><h>108</h></coordinates><panel_attributes>ModernDesigner
+--
++CreateDesk(_priceLimit : int, _style : Styles) : Desk
++CreateWardrobe(_priceLimit : int, _style : Styles) : Wardrobe</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1368</x><y>972</y><w>408</w><h>108</h></coordinates><panel_attributes>ScandinavianDesigner
+--
++CreateDesk(_priceLimit : int, _style : Styles) : Desk
++CreateWardrobe(_priceLimit : int, _style : Styles) : Wardrobe</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>276</y><w>636</w><h>36</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>510;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>612</x><y>264</y><w>120</w><h>84</h></coordinates><panel_attributes>uses</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1752</x><y>228</y><w>204</w><h>132</h></coordinates><panel_attributes>/Desk/
+--
++&lt;&lt;get/set&gt;&gt;Price : int
++&lt;&lt;get/set&gt;&gt;Color : string
++&lt;&lt;get/set&gt;&gt;Style : Styles
+-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1512</x><y>348</y><w>360</w><h>204</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>280;10;280;70;10;70;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1404</x><y>528</y><w>252</w><h>84</h></coordinates><panel_attributes>AdjustableDesk
+--
++&lt;&lt;get/set&gt;&gt;Levels: int
+--
++AdjustableDesk(_style : Styles)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1740</x><y>528</y><w>216</w><h>84</h></coordinates><panel_attributes>DraftingTable
+--
++&lt;&lt;get/set&gt;&gt;hasDrawers : bool
+--
++DraftingTable(_style : Styles)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1836</x><y>348</y><w>36</w><h>204</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>2076</x><y>528</y><w>252</w><h>96</h></coordinates><panel_attributes>TreadmillDesk
+--
++&lt;&lt;get/set&gt;&gt;Speed: double
+--
++TreadmillDesk(_style : Styles)
++useTreadmill(_time : double) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1836</x><y>348</y><w>384</w><h>204</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;300;70;300;150</additional_attributes></element><element><id>Relation</id><coordinates><x>1296</x><y>276</y><w>480</w><h>36</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;380;10</additional_attributes></element><element><id>Text</id><coordinates><x>1680</x><y>264</y><w>120</w><h>84</h></coordinates><panel_attributes>uses</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1896</x><y>816</y><w>336</w><h>120</h></coordinates><panel_attributes>Program
+--
++classicDesigner : ClassicDesigner
++modernDesigner : ModernDesigner
++scandinavianDesigner : ScandinavianDesigner
+--
++static Main(args : string[]) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1764</x><y>924</y><w>204</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>150;10;150;70;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>1416</x><y>924</y><w>672</w><h>252</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>540;10;540;190;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>852</x><y>924</y><w>1344</w><h>348</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>1100;10;1100;270;10;270;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>300</y><w>564</w><h>384</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;450;10;450;300</additional_attributes></element><element><id>Text</id><coordinates><x>1068</x><y>588</y><w>120</w><h>84</h></coordinates><panel_attributes>uses</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1368</x><y>300</y><w>408</w><h>384</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>320;10;10;10;10;300</additional_attributes></element><element><id>Text</id><coordinates><x>1332</x><y>588</y><w>120</w><h>84</h></coordinates><panel_attributes>uses</panel_attributes><additional_attributes></additional_attributes></element></diagram>

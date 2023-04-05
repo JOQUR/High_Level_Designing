@@ -1,0 +1,13 @@
+@startuml AbstractFactory
+
+abstract class Wardrobe {
+    #price : int
+    #color : string
+}
+
+class Dresser {
+
+}
+
+class Dresser extends Wardrobe
+@enduml
