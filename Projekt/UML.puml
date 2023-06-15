@@ -1,0 +1,165 @@
+@startuml
+
+namespace TheWarTime.Items {
+interface Weapon
+{
+    +Attack(out actualHealth : double) : void
+    +onAttackEffect() : double
+}
+
+
+class Pistol
+{
+    + <<get/private set>> Damage : double
+    - perks : List<PistolPerks>
+
+    + Pistol()
+}
+
+class Knife
+{
+    + <<get/private set>> Damage : double
+    - perks : List<KnifePerks>
+    + <<get/private set>> weight : double
+    +Knife()
+}
+
+class Food
+{
+    + <<get/private set>> hunger : int
+    + eat(item : List<Item>) : int
+}
+
+interface Item{}
+
+
+
+enum PistolPerks{
+    standard,
+    betterAmmo,
+    weaponSight
+}
+enum KnifePerks{
+    standard,
+    sharpenedEdge,
+    poisonedEdge
+}
+
+Item <|.. Food
+Item <|.. Weapon
+Weapon <|.. Pistol
+Weapon <|.. Knife
+Pistol *- PistolPerks
+Knife *- KnifePerks
+}
+
+
+namespace TheWarTime.Characters{
+    class Player
+    {
+        + Health : double
+        + Hunger : int
+        + Equipment : List<Item>
+        - {static} _player : Player
+        - Player()
+        + {static} GetPlayerInstance() : Player
+    }
+    abstract class Vendor
+    {
+        + Items : List<Item>
+        - money : double
+
+        + {abstract} SellItem(Items : List<Item>) : void
+        + {abstract} BuyItem(Items : List<Item>) : void  
+        + Vendor(items : List<Item>)
+    }
+
+    class WeaponVendor
+    {
+        + SellItem(Items : List<Item>) : void
+        + BuyItem(Items : List<Item>) : void  
+    }
+
+    class ConsumablesVendor
+    {
+        + SellItem(Items : List<Item>) : void
+        + BuyItem(Items : List<Item>) : void  
+    }
+
+
+    Player *- TheWarTime.Items.Item
+    Vendor <|.. WeaponVendor
+    Vendor <|.. ConsumablesVendor
+}
+
+namespace TheWarTime.Location{
+    class Location
+    {
+        # player : Player
+        # loot : List<Item>
+
+
+    }
+
+    class Home
+    {
+
+    }
+
+    class Library
+    {
+
+    }
+    Location *- TheWarTime.Characters.Player
+    Location *- TheWarTime.Items.Item
+    Location <|-- Library
+    Location <|-- Home
+}
+
+namespace TheWarTime.MainMenu{
+    class NewGame
+    { 
+        + <<get/set>> Difficulty : int
+        - location : Location
+        - config : Config
+        + NewGame(difficulty : int)
+    }
+
+    class Save
+    {
+        + Save(config : Config)
+    }
+    class Quit
+    {
+        - saveObj : Save
+    }
+
+    NewGame *- TheWarTime.Location.Location
+    NewGame *- TheWarTime.ConfigHandler.Config
+    Quit *- Save
+}
+
+namespace TheWarTime.ConfigHandler{
+    class JSONDeserialize
+    {
+        - path : String
+        + getData(path : String) : String
+        + JSONDeserialize(path : String)
+    }
+
+    class JSONSerialize
+    {
+        - path : String
+        + setData(path : String) : void
+        + JSONSerialize(path : String)
+    }
+
+    class Config
+    {
+        - data: String
+        + Config()
+        + prepareData(data : String) : bool
+
+    }
+}
+@enduml
