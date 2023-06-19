@@ -8,11 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Items\" />
-    <Folder Include="Characters\" />
     <Folder Include="Locations\" />
     <Folder Include="MainMenu\" />
-    <Folder Include="ConfigHandler\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties defaultconfig_1json__JsonSchema="https://json-schema.org/draft-04/schema" /></VisualStudio></ProjectExtensions>
 
 </Project>

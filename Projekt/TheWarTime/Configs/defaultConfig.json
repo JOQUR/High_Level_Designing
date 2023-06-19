@@ -1,0 +1,70 @@
+{
+  "Vendor": {
+    "Money": 1000,
+    "WeaponVendor": [
+      { "Pistol": 2 },
+      { "Ammunition": 50 },
+      { "Knife": 3 },
+      {
+        "PistolPerk": [
+          { "BetterAmmo": 1 },
+          { "WeaponSight": 1 }
+        ]
+      },
+      {
+        "KnifePerk": [
+          { "SharpenedEdge": 1 },
+          { "PoisonedEdge": 1 }
+        ]
+      }
+    ],
+    "FoodVendor": [
+      { "SoupCan": {"Price": 10} },
+      { "ChickenWithRice": 5 },
+      { "Water": 15 }
+    ]
+  },
+
+  "Item": {
+    "Weapon": {
+      "Pistol": {
+        "Damage": 2,
+        "Price": 100,
+        "CriticalStrike": 0.8,
+        "Weight": 4
+      },
+      "Knife": {
+        "Damage": 5,
+        "Price": 50,
+        "CriticalStrike": 0.2,
+        "Weight": 1
+      }
+    },
+    "Food": {
+      "SoupCan": {
+        "Nutrition": 2,
+        "Price": 50,
+        "Thirst": 2,
+        "Weight": 1
+      },
+      "ChickenWithRice": {
+        "Nutrition": 4,
+        "Price": 75,
+        "Thirst": 1,
+        "Weight": 2
+      },
+      "Water": {
+        "Nutrition": 0,
+        "Price": 20,
+        "Thirst": 4,
+        "Weight": 1
+      }
+    }
+  },
+  "Character": {
+    "Health": 10,
+    "Hunger": 10,
+    "Thirsty": 10,
+    "Capacity": 15
+  }
+}
