@@ -97,7 +97,7 @@ namespace TheWarTime.Location{
     {
         # player : Player
         # loot : List<Item>
-
+        + <<get/ private set>> temperature
 
     }
 
@@ -115,7 +115,9 @@ namespace TheWarTime.Location{
     Location <|-- Library
     Location <|-- Home
 }
-
+/'
+    Command
+'/
 namespace TheWarTime.MainMenu{
     class NewGame
     { 
